@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Start: Navbar*/
+.navbar_header{
+    height: 83px;
+    width: 100%;
+    background-color: chocolate;
+    
+
+}
+.navbar_header .navbar_nav{
+    height: 100%;
+    display: flex;
+}
+/*End: Navbar*/
+
+/*Logo*/
+.logo img{
+    height: 23.55px;
+    width: 168.765px;
+    flex-shrink: 0;
+}
+
+/*Barra de búsqueda */
+.search-bar input{
+    border: 1px solid #FFF;
+    border-radius: 100px;
+    
+}
+
+/* Estilos para títulos grandes */
+.hero h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+}
