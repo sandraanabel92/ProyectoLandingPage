@@ -28,11 +28,7 @@
 .search-bar input{
     border: 1px solid #FFF;
     border-radius: 100px;
-}
-div{
-    width: fit-content;
-    position: relative;
-}
+    }
 
 /* Estilos para títulos grandes */
 .hero h1{
