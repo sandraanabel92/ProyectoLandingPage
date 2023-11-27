@@ -1,38 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 /* Start: Navbar*/
-.navbar_header{
-    height: 83px;
+.navbar_header {
+
     width: 100%;
     background-color: chocolate;
-    
+
 
 }
-.navbar_header .navbar_nav{
+
+.navbar_header .navbar_nav {
     height: 100%;
     display: flex;
+    justify-content: space-between;
 }
-/*End: Navbar*/
+
+
 
 /*Logo*/
-.logo img{
-    height: 23.55px;
-    width: 168.765px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 0px 80px;
+}
+
+#imglogo01 {
+    width: 89.443px;
+    height: 23.819px;
     flex-shrink: 0;
 }
 
-/*Barra de búsqueda */
-.search-bar input{
+#imglogo02 {
+    width: 168.765px;
+    height: 23.55px;
+    flex-shrink: 0;
+}
+
+/* Enlaces*/
+div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* Contenedor de los enlaces de autenticación */
+.navbar_links_auth{
+    display: flex;
+    gap: 20px;
+}
+/* Contenedor de los enlaces de idioma y menú hamburguesa */
+.navbar_links_lang{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    
+
+}
+.navbar_nav a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 390;
+    line-height: 45px;
+    text-align: center;
+   
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.hamburger_menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* Imagen del menú hamburguesa */
+.hamburger_menu img {
+    width: 45px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+/*End: Navbar*/
+
+/*Barra de búsqueda 
+.search-bar input {
     border: 1px solid #FFF;
     border-radius: 100px;
-    }
+}
 
-/* Estilos para títulos grandes */
-.hero h1{
+
+.hero h1 {
     font-size: 40px;
     font-weight: 400;
     line-height: 45px;
 }
+Estilos para títulos grandes */

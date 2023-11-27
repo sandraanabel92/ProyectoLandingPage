@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIQLUXURY Real Estate</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
 </head>
+
 <body>
     <header class="navbar_header">
         <nav class="navbar_nav">
             <div class="logo">
-                <img src="../img/logo.png" alt="Logo de UNIQLUXURY">
+                <img id="imglogo01" src="../img/logo01.svg" alt="Logo de UNIQLUXURY">
+                <img id="imglogo02" src="../img/logo02.svg" alt="Logo de UNIQLUXURY">
             </div>
-            
-            <div class="navbar_container_links">
-                <a href="#">LOGIN</a>
-                <a href="#">SIGN UP</a>
-                <a href="#">ESP</a>
-                <a href="#">ENG</a>
-            </div>
-            <div class="search-bar">
-                <input type="search" placeholder="Ex. Villa Budapest">
-                <img src="../img/lupa.png" alta="busqueda">
+            <div class="navbar_container-links">
+                <!-- Contenedor de los enlaces de autenticación -->
+                <div class="navbar_links_auth">
+                    <a href="#">LOGIN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+
+                <!-- Contenedor de los enlaces de idioma y menú hamburguesa -->
+                <div class="navbar_links_lang">
+                    <a href="#">ESP</a>
+                    <a href="#">ENG</a>
+                    <button class="hamburger_menu">
+                        <img src="../img/hamburger_icon.svg" alt="Menu">
+
+                    </button>
+                </div>
 
             </div>
-            <div class="hamburger-menu">
 
-            </div>
-            
         </nav>
+       <!--
+        <div class="search-bar">
+            <input type="search" placeholder="Ex. Villa Budapest">
+            <img src="../img/lupa.png" alta="busqueda">
+
+        </div>
+    -->
     </header>
+    
+    <!--
     <main>
         <section class="hero">
             <hi1>Luxury</hi1>
@@ -38,8 +53,7 @@
 
         </section>
     </main>
-    <footer>
-
-    </footer>
+-->
 </body>
+
 </html>
