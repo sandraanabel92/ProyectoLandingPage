@@ -1,4 +1,3 @@
-
 /* Start: Navbar*/
 .navbar_header {
 
@@ -36,29 +35,57 @@
     flex-shrink: 0;
 }
 
-/* Enlaces*/
+/* Enlaces
 div{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+}*/
+
+/*Contenedor principal para todos los elementos de la derecha */
+.navbar_container-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
 }
 
-/* Contenedor de los enlaces de autenticación */
+/* Contenedor de los enlaces de autenticación y de idioma */
+.navbar_links_auth_lang {
+    display: flex;
+    gap: 10px;
+}
+
+/* Contenedor de los enlaces de autenticación 
 .navbar_links_auth{
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 10px;
+    order: 1;
 }
-/* Contenedor de los enlaces de idioma y menú hamburguesa */
+/* Contenedor de los enlaces de idioma y menú hamburguesa 
 .navbar_links_lang{
     display: flex;
-    flex-direction: column;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px;
+    order: 2;
     
+}*/
+
+
+/* Estilos para los enlaces individuales */
+.navbar_container-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
 
 }
-.navbar_nav a{
+
+/*.navbar_nav a{
     color: #FFF;
     text-decoration: none;
     padding: 10px;
@@ -67,19 +94,21 @@ div{
     line-height: 45px;
     text-align: center;
    
-}
+}*/
 
 /* Estilos para el botón de menú hamburguesa */
 .hamburger_menu {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
+
 /* Imagen del menú hamburguesa */
 .hamburger_menu img {
-    width: 45px;
-    height: 30px;
-    flex-shrink: 0;
+    width: 24px;
+    height: auto;
+
 }
 
 /*End: Navbar*/
