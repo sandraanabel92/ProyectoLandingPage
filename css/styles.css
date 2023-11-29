@@ -1,128 +1,146 @@
-/* Start: Navbar*/
-.navbar_header {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    width: 100%;
-    background-color: chocolate;
-
-
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/img001.png'); /* Cambia a la URL de tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* La imagen de fondo es fija al hacer scroll */
 }
 
-.navbar_header .navbar_nav {
+body::before {
+    content: '';
+    position: absolute; /* Posicionamiento absoluto respecto al body */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Color negro con opacidad */
+    z-index: -1; /* Coloca la superposición detrás del contenido */
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar__nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
-
-
-/*Logo*/
-.logo {
+/* Logo */
+.navbar__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0px 0px 80px;
 }
 
-#imglogo01 {
+.navbar__logo-img {
+    flex-shrink: 0;
+}
+
+.navbar__logo-img:first-child {
     width: 89.443px;
     height: 23.819px;
-    flex-shrink: 0;
 }
 
-#imglogo02 {
+.navbar__logo-img:last-child {
     width: 168.765px;
     height: 23.55px;
-    flex-shrink: 0;
 }
 
-/* Enlaces
-div{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-}*/
-
-/*Contenedor principal para todos los elementos de la derecha */
-.navbar_container-links {
+/* Contenedor principal */
+.navbar__container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-
 }
 
-/* Contenedor de los enlaces de autenticación y de idioma */
-.navbar_links_auth_lang {
-    display: flex;
-    gap: 10px;
-}
-
-/* Contenedor de los enlaces de autenticación 
-.navbar_links_auth{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    order: 1;
-}
-/* Contenedor de los enlaces de idioma y menú hamburguesa 
-.navbar_links_lang{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    order: 2;
-    
-}*/
-
-
-/* Estilos para los enlaces individuales */
-.navbar_container-links a {
+/* Estilos para los enlaces */
+.navbar__link {
     text-decoration: none;
-    color: #fff;
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
+}
+
+/* Estilos específicos para los tipos de enlaces */
+.navbar__links--auth, .navbar__links--lang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+.navbar .navbar__divider{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: auto;
 
 }
 
-/*.navbar_nav a{
-    color: #FFF;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 390;
-    line-height: 45px;
-    text-align: center;
-   
-}*/
+/* Divisores */
+.navbar__links--auth .navbar__divider {
+    width: 2px;
+    height: 30px;
+    background-color: #000;
+    margin: 0 10px;
+}
 
-/* Estilos para el botón de menú hamburguesa */
-.hamburger_menu {
+.navbar__links--lang .navbar__divider {
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+/* Botón de menú hamburguesa */
+.navbar__menu {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
 }
 
-/* Imagen del menú hamburguesa */
-.hamburger_menu img {
-    width: 24px;
+.navbar__menu-icon {
+    width: 40px;
     height: auto;
-
-}
-
-/*End: Navbar*/
-
-/*Barra de búsqueda 
-.search-bar input {
-    border: 1px solid #FFF;
-    border-radius: 100px;
 }
 
 
-.hero h1 {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 45px;
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: white; /* o cualquier otro color de fondo que prefieras */
+    border-radius: 25px; /* Ajusta esto según la redondez que desees */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Esto añade una sombra ligera */
+    max-width: 600px; /* o el ancho que prefieras */
+    margin: 20px auto; /* Esto centra la barra de búsqueda en la pantalla */
 }
-Estilos para títulos grandes */
+
+.search-bar__input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 8px 16px;
+    font-size: 16px; /* Ajusta esto según el tamaño que prefieras */
+    border-radius: 25px; /* Asegúrate de que sea igual al border-radius del .search-bar */
+}
+
+.search-bar__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.search-bar__icon {
+    width: 24px; /* Ajusta según el tamaño del icono que prefieras */
+    height: auto;
+}
+
