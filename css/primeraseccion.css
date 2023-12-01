@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/img001.png');
+    /* Cambia a la URL de tu imagen de fondo */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-attachment: fixed;
+    /* La imagen de fondo es fija al hacer scroll */
+    padding-top: 70px;
+}
+
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    /* Alto z-index para que el header esté sobre otros elementos */
+}
+
+.navbar__nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+/* Logo */
+.navbar__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 0px 122px;
+
+}
+
+.navbar__logo-img {
+    flex-shrink: 0;
+}
+
+.navbar__logo-img:first-child {
+    width: 89.443px;
+    height: 23.819px;
+}
+
+.navbar__logo-img:last-child {
+    width: 168.765px;
+    height: 23.55px;
+}
+
+/* Contenedor principal */
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Estilos para los enlaces */
+.navbar__link {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    font-style: normal;
+}
+
+/* Estilos específicos para los tipos de enlaces */
+.navbar__links--auth,
+.navbar__links--lang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.navbar .navbar__divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin: auto;
+
+}
+
+/* Divisores */
+.navbar__links--auth .navbar__divider {
+    width: 1.5px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin: 0 10px;
+}
+
+.navbar__links--lang .navbar__divider {
+    width: 1.5px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin: 0 10px;
+}
+
+/* Botón de menú hamburguesa */
+.navbar__menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar__menu-icon {
+    width: 40px;
+    height: auto;
+}
+
+/*Barra de busqueda*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background: transparent;
+    /* Fondo semitransparente blanco */
+    border: 2px solid #fff;
+    /* Borde blanco */
+    border-radius: 100px;
+    /* Ajusta esto según la redondez que desees */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Esto añade una sombra ligera */
+    max-width: 400px;
+    /* o el ancho que prefieras */
+    margin-left: auto;
+    /* Alinea la barra de búsqueda a la derecha */
+    margin-right: 20px;
+    /* Añade margen a la derecha si es necesario */
+    margin-top: 20px;
+
+}
+
+.search-bar__input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 4px 14px;
+    font-size: 20px;
+    /* Ajusta esto según el tamaño que prefieras */
+    background: transparent;
+    /* Fondo transparente para el input */
+    color: #fff;
+
+
+}
+
+.search-bar__input::placeholder {
+    color: #fff;
+
+}
+
+.search-bar__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 14px;
+}
+
+.search-bar__icon {
+    width: 24px;
+    /* Ajusta según el tamaño del icono que prefieras*/
+    height: auto;
+}
+
+/*Start:Home Landing image*/
+.home_section__presentation {
+    width: 100%;
+    height: 993px;
+    display: flex;
+
+    margin-left: 106px;
+}
+/* Titulo*/
+.home_section__presentation .home_section__container-titulo {
+
+    width: 1200px;
+    height: auto;
+    margin-top: 300px;
+}
+
+.home_section__presentation .home_section__container-titulo p {
+    color: #B4B7B7;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+.home_section__presentation .home_section__container-titulo h1 {
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 10px;
+
+}
+
+/* Social*/
+.home_section_vertical_social {
+    position: absolute;
+    z-index: 999;
+    left: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 106px;
+
+}
+
+.home_section_vertical_social p {
+    width: auto;
+    height: auto;
+    transform: rotate(90deg);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.50);
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.home_section_vertical_social .linea-vertical {
+    height: 75px;
+    border-left: 2px solid #7E7E7E;
+    margin-top: 10px;
+
+}
+
+.home_section_vertical_social .social {
+    height: 18px;
+    width: 18px;
+
+}
