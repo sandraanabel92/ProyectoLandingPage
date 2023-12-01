@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mulish:wght@300&display=swap');
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Hedvig Letters Serif', sans-serif;
     background-image: url('../img/img001.png');
     /* Cambia a la URL de tu imagen de fondo */
     background-size: cover;
@@ -15,7 +16,6 @@ body {
 }
 
 
-
 /* Navbar */
 .navbar {
     position: fixed;
@@ -25,6 +25,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     /* Alto z-index para que el header esté sobre otros elementos */
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar__nav {
@@ -179,31 +180,93 @@ body {
     height: 993px;
     display: flex;
 
-    margin-left: 106px;
-}
-/* Titulo*/
-.home_section__presentation .home_section__container-titulo {
 
-    width: 1200px;
-    height: auto;
-    margin-top: 300px;
+
 }
 
-.home_section__presentation .home_section__container-titulo p {
+/* Estilo para el contenedor de la sección de presentación y la barra de búsqueda de propiedades */
+.home_section__container {
+    width: 100%;
+    max-width: 1200px;
+    /* Ajusta esto según el ancho máximo que desees */
+    margin: 0 auto;
+    /* Centra el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    padding-top: 300px;
+    /* Ajusta la cantidad de espacio en la parte superior */
+    margin-left: 100px;
+}
+
+.home_section__container-titulo p {
     color: #B4B7B7;
     font-size: 35px;
+    margin: 0;
+    /* Elimina los márgenes por defecto */
     font-style: normal;
     font-weight: 400;
-    line-height: 10px;
 }
 
-.home_section__presentation .home_section__container-titulo h1 {
+.home_section__container-titulo h1 {
     color: #FFF;
     font-size: 60px;
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+    line-height: 1;
+    /* Ajusta el interlineado */
     font-style: normal;
     font-weight: 500;
-    line-height: 10px;
+}
 
+/* Estilo para la barra de búsqueda de propiedades */
+.search-bar_properties {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: transparent;
+    /* Fondo blanco para la barra */
+    border: 1px solid #FFF;
+    border-radius: 100px;
+    /* Ajusta para bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    /* Ajusta el ancho al contenido */
+    margin-top: 20px;
+    /* Espacio encima de la barra de búsqueda */
+    flex-direction: row-reverse;
+    
+
+
+}
+
+.search-bar_properties__input {
+    flex-grow: 1;
+    padding: 8px 16px;
+    font-size: 16px;
+    /* Ajusta el tamaño del texto */
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+.search-bar_properties__input::placeholder {
+    color: #fff;
+
+}
+
+.search-bar_properties__button {
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar_properties__icon {
+    width: 24px;
+    /* Tamaño del ícono */
+    height: auto;
 }
 
 /* Social*/
