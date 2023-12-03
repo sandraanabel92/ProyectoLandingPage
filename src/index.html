@@ -9,259 +9,286 @@
     <link rel="stylesheet" href="../css/primeraseccion.css" type="text/css">
     <link rel="stylesheet" href="../css/segundaseccion.css" type="text/css">
     <link rel="stylesheet" href="../css/tercerraseccion.css" type="text/css">
+    <link rel="stylesheet" href="../css/cuartaseccion.css" type="text/css">
 </head>
 
 <body>
-    <!-- section-01 -->
-    <div class="navbar">
-        <nav class="navbar__nav">
-            <div class="navbar__logo">
-                <img src="../img/logo01.svg" alt="Logo de UNIQLUXURY" class="navbar__logo-img">
-                <img src="../img/logo02.svg" alt="Logo de UNIQLUXURY" class="navbar__logo-img">
+<!-- section-01 -->
+<div class="navbar">
+    <nav class="navbar__nav">
+        <div class="navbar__logo">
+            <img src="../img/logo01.svg" alt="Logo de UNIQLUXURY" class="navbar__logo-img">
+            <img src="../img/logo02.svg" alt="Logo de UNIQLUXURY" class="navbar__logo-img">
+        </div>
+        <div class="navbar__container">
+            <!-- Contenedor de los enlaces de autenticación -->
+            <div class="navbar__links navbar__links--auth">
+                <a href="#" class="navbar__link">LOG IN</a>
+                <div class="navbar__divider"></div> <!-- Divisor aquí -->
+                <a href="#" class="navbar__link">SIGN UP</a>
             </div>
-            <div class="navbar__container">
-                <!-- Contenedor de los enlaces de autenticación -->
-                <div class="navbar__links navbar__links--auth">
-                    <a href="#" class="navbar__link">LOG IN</a>
-                    <div class="navbar__divider"></div> <!-- Divisor aquí -->
-                    <a href="#" class="navbar__link">SIGN UP</a>
-                </div>
-                <!-- Contenedor de los enlaces de idioma y menú hamburguesa -->
-                <div class="navbar__links navbar__links--lang">
-                    <a href="#" class="navbar__link">ESP</a>
-                    <a href="#" class="navbar__link">ENG</a>
-                    <div class="navbar__divider"></div> <!-- Divisor aquí -->
-                    <button class="navbar__menu">
-                        <img src="../img/hamburger_icon.svg" alt="Menu" class="navbar__menu-icon">
-                    </button>
-                </div>
+            <!-- Contenedor de los enlaces de idioma y menú hamburguesa -->
+            <div class="navbar__links navbar__links--lang">
+                <a href="#" class="navbar__link">ESP</a>
+                <a href="#" class="navbar__link">ENG</a>
+                <div class="navbar__divider"></div> <!-- Divisor aquí -->
+                <button class="navbar__menu">
+                    <img src="../img/hamburger_icon.svg" alt="Menu" class="navbar__menu-icon">
+                </button>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+</div>
+<header id="header-real-state">
+    <div id="head-top" style="height: 59.3125px;">
+    </div>
+    <!-- Buscador -->
+    <div class="search-bar">
+        <input type="text" class="search-bar__input" placeholder="Ex. Villa Budapest"/>
+        <button class="search-bar__button">
+            <img src="../img/lupa.svg" alt="Buscar" class="search-bar__icon"/>
+        </button>
+    </div>
+    <!-- Presentacion -->
+    <section class="home_section__presentation">
+        <div class="home_section__container">
+            <div class="home_section__container-titulo">
+                <p>Luxury</p>
+                <h1>Real Estate</h1>
+            </div>
+            <!--Barra de properties-->
+            <div class="search-bar_properties">
+                <label>
+                    <input type="text" class="search-bar_properties__input" placeholder="View all properties"/>
+                </label>
+                <button class="search-bar_properties__button">
+                    <img src="../img/img002-flecha.svg" alt="Properties" class="search-bar_properties__icon"/>
+                </button>
+            </div>
+        </div>
+        <!-- Social -->
+        <div class="home_section_vertical_social">
+            <p>FOLLOW</p>
+            <div class="linea-vertical"></div>
+            <a href="https://www.linkedin.com/">
+                <img src="../img/linkedIn.svg" alt="linkedIn" class="social">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="../img/twitter.svg" alt="twitter" class="social">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="../img/facebook.svg" alt="facebook" class="social">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../img/instagram.svg" alt="instagram" class="social">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="../img/youtube.svg" alt="youtube" class="social">
+            </a>
+        </div>
+    </section>
+    <div class="selector_banner">
+        <img src="../img/linea.svg" alt="imagen">
+        <img src="../img/linea.svg" alt="imagen">
+        <img src="../img/linea.svg" alt="imagen">
+    </div>
+
+</header>
+
+<!-- section-02 -->
+<!-- Gallery Sale -->
+<section class="contenedor-sale">
+    <div class="contenedor-imagenes-sale">
+        <div class="imagen03-sale">
+            <img src="../img/gallerysale03.png" alt="Gallery Sale 03">
+        </div>
+        <div class="imagenes-sale">
+            <img src="../img/gallerysale02.png" alt="Gallery Sale 02">
+            <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
+                England<br>Glasgow</p>
+        </div>
+        <div class="imagenes-sale">
+            <img src="../img/gallerysale01.png" alt="Gallery Sale 01">
+
+            <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
+                France<br>Marseilles</p>
+        </div>
+    </div>
+    <div class="contenedor-texto-sale">
+        <div class="textos-sale">
+            <spam>Worldwide gallery</spam>
+            <h2>Properties for sale</h2>
+        </div>
+        <div class="botones-navigation">
+            <button class="prev-sale">
+                <img src="../img/prev.svg">PREV
+
+            </button>
+            <button class="view-sale">
+                View all properties
+            </button>
+            <button class="next-sale">
+                NEXT<img src="../img/next.svg">
+            </button>
+
+        </div>
 
     </div>
-    <header id="header-real-state">
-        <div id="head-top" style="height: 59.3125px;">
+
+
+</section>
+
+<!-- Gallery Rent -->
+<section class="gallery-section-rent">
+    <div class="contenedor-texto">
+        <div class="gallery-rent-content">
+            <spam>Worldwide gallery</spam>
+            <h2>Properties for rent</h2>
+            <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to
+                knowledgeably advise you at every stage of the property cycle.</p>
+
         </div>
-        <!-- Buscador -->
-        <div class="search-bar">
-            <input type="text" class="search-bar__input" placeholder="Ex. Villa Budapest" />
-            <button class="search-bar__button">
-                <img src="../img/lupa.svg" alt="Buscar" class="search-bar__icon" />
+        <div class="gallery-rent-navigation">
+            <button class="prev-rent">
+                <img src="../img/prev.svg"> PREV
             </button>
+            <button class="view-rent">View all properties</button>
+            <button class="next-rent">
+                NEXT<img src="../img/next.svg">
+            </button>
+
         </div>
-        <!-- Presentacion -->
-        <section class="home_section__presentation">
-            <div class="home_section__container">
-                <div class="home_section__container-titulo">
-                    <p>Luxury</p>
-                    <h1>Real Estate</h1>
-                </div>
-                <!--Barra de properties-->
-                <div class="search-bar_properties">
-                    <label>
-                        <input type="text" class="search-bar_properties__input" placeholder="View all properties" />
-                    </label>
-                    <button class="search-bar_properties__button">
-                        <img src="../img/img002-flecha.svg" alt="Properties" class="search-bar_properties__icon" />
-                    </button>
-                </div>
-            </div>
-            <!-- Social -->
-            <div class="home_section_vertical_social">
-                <p>FOLLOW</p>
-                <div class="linea-vertical"></div>
-                <a href="https://www.linkedin.com/">
-                    <img src="../img/linkedIn.svg" alt="linkedIn" class="social">
-                </a>
-                <a href="https://twitter.com/">
-                    <img src="../img/twitter.svg" alt="twitter" class="social">
-                </a>
-                <a href="https://www.facebook.com/">
-                    <img src="../img/facebook.svg" alt="facebook" class="social">
-                </a>
-                <a href="https://www.instagram.com/">
-                    <img src="../img/instagram.svg" alt="instagram" class="social">
-                </a>
-                <a href="https://www.youtube.com/">
-                    <img src="../img/youtube.svg" alt="youtube" class="social">
-                </a>
-            </div>
-        </section>
-        <div class="selector_banner">
-            <img src="../img/linea.svg" alt="imagen">
-            <img src="../img/linea.svg" alt="imagen">
-            <img src="../img/linea.svg" alt="imagen">
+    </div>
+    <div class="contenedor-imagenes">
+        <div class="imagenes">
+            <img src="../img/galleryrent001.png" alt="Gallery Rent 01">
+            <p>France<br>Carcassonne</p>
         </div>
-
-    </header>
-
-    <!-- section-02 -->
-    <!-- Gallery Sale -->
-    <section class="contenedor-sale">
-        <div class="contenedor-imagenes-sale">
-            <div class="imagen03-sale">
-                <img src="../img/gallerysale03.png" alt="Gallery Sale 03">
-            </div>
-            <div class="imagenes-sale">
-                <img src="../img/gallerysale02.png" alt="Gallery Sale 02">
-                <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
-                    England<br>Glasgow</p>
-            </div>
-            <div class="imagenes-sale">
-                <img src="../img/gallerysale01.png" alt="Gallery Sale 01">
-
-                <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
-                    France<br>Marseilles</p>
-            </div>
+        <div class="imagenes">
+            <img src="../img/galleryrent002.png" alt="Gallery Rent 02">
+            <p>Germany<br> Munich</p>
         </div>
-        <div class="contenedor-texto-sale">
-            <div class="textos-sale">
-                <spam>Worldwide gallery</spam>
-                <h2>Properties for sale</h2>
-            </div>
-            <div class="botones-navigation">
-                <button class="prev-sale">
-                    <img src="../img/prev.svg">PREV
-
-                </button>
-                <button class="view-sale">
-                    View all properties
-                </button>
-                <button class="next-sale">
-                    NEXT<img src="../img/next.svg">
-                </button>
-
-            </div>
-
+        <div class="imagen03">
+            <img src="../img/galleryrent003.png" alt="Gallery Rent 03">
+            <p>Fran<br>Clo</p>
         </div>
 
 
-    </section>
-
-    <!-- Gallery Rent -->
-    <section class="gallery-section-rent">
-        <div class="contenedor-texto">
-            <div class="gallery-rent-content">
-                <spam>Worldwide gallery</spam>
-                <h2>Properties for rent</h2>
-                <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to
-                    knowledgeably advise you at every stage of the property cycle.</p>
-
+    </div>
+</section>
+<!-- section-03 -->
+<section class="container-developments">
+    <div class="developments-text">
+        <spam>Luxury properties</spam>
+        <h2>Developments</h2>
+    </div>
+    <div class="developments-gallery">
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img001.png" alt="Img001">
             </div>
-            <div class="gallery-rent-navigation">
-                <button class="prev-rent">
-                    <img src="../img/prev.svg"> PREV
-                </button>
-                <button class="view-rent">View all properties</button>
-                <button class="next-rent">
-                    NEXT<img src="../img/next.svg">
-                </button>
-
+            <div class="developments-gallery-text">
+                <span>The Surf Row</span>
+                <span>Surfside</span>
             </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img002.png" alt="Img002">
+            </div>
+            <div class="developments-gallery-text">
+                <span>Indigo</span>
+                <span>Vero Beach</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img003.png" alt="Img003">
+            </div>
+            <div class="developments-gallery-text">
+                <span>Rosewood - Baha Mar</span>
+                <span>Nassau, the Bahamas</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img004.png" alt="Img004">
+            </div>
+            <div class="developments-gallery-text">
+                <span>St. Regis - The Astor Tower</span>
+                <span>Brickell, Miami</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img005.png" alt="Img005">
+            </div>
+            <div class="developments-gallery-text">
+                <span>Giralda Place</span>
+                <span>Coral Gables</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img006.png" alt="Img006">
+            </div>
+            <div class="developments-gallery-text">
+                <span>St. Regis - The William Tower</span>
+                <span>Brickell, Miami</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img007.png" alt="Img007">
+            </div>
+            <div class="developments-gallery-text">
+                <span>Solterre at Cockleshell Bay</span>
+                <span>St. Kitts and nevis</span>
+            </div>
+        </a>
+        <a class="developments-gallery-box">
+            <div class="developments-gallery-img">
+                <img src="../img/seccion-tres/img008.png" alt="Img008">
+            </div>
+            <div class="developments-gallery-text">
+                <span>Urbin</span>
+                <span>Coconut Grove</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- section-04 -->
+<section class="container-services">
+    <div class="services-box-01">
+        <p>box black</p>
+    </div>
+    <div class="services-box-02">
+        <img src="../img/seccion-cuatro/img008.png" alt="Img008">
+    </div>
+    <div class="services-box-03">
+        <div class="service-box_container">
+            <div class="services-box-03__box">
+                <div class="services-box-03_box_icon">
+                    <img class="service-box-03_logo" src="../img/seccion-cuatro/service-ul-circle.svg" alt="service-ul-circle">
+                    <img src="../img/seccion-cuatro/service-ul.svg" alt="service-ul">
+                    <img class="service-box-03_line" src="../img/seccion-cuatro/service-ul-line.svg" alt="service-ul-line">
+                </div>
+            </div>
+            <div class="services-box-03__box">
+                <div class="service-box-03_text">
+                    <span >Services</span>
+                    <h1>Prueba</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi corporis, ducimus excepturi, incidunt magnam maiores minus molestiae officiis optio perspiciatis possimus provident quia recusandae saepe temporibus voluptate! Excepturi, officia. </p>
+                </div>
+            </div>
+            <div class="services-box-03__box"></div>
         </div>
-        <div class="contenedor-imagenes">
-            <div class="imagenes">
-                <img src="../img/galleryrent001.png" alt="Gallery Rent 01">
-                <p>France<br>Carcassonne</p>
-            </div>
-            <div class="imagenes">
-                <img src="../img/galleryrent002.png" alt="Gallery Rent 02">
-                <p>Germany<br> Munich</p>
-            </div>
-            <div class="imagen03">
-                <img src="../img/galleryrent003.png" alt="Gallery Rent 03">
-                <p>Fran<br>Clo</p>
-            </div>
 
+    </div>
 
-        </div>
-    </section>
-    <!-- section-03 -->
-    <section class="container-developments">
-        <div class="developments-text">
-           <spam>Luxury properties</spam>
-           <h2>Developments</h2>
-        </div>
-        <div class="developments-gallery">
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img001.png" alt="Img001">
-                </div>
-               <div class="developments-gallery-text">
-                   <span>The Surf Row</span>
-                   <span>Surfside</span>
-               </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img002.png" alt="Img002">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>Indigo</span>
-                    <span>Vero Beach</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img003.png" alt="Img003">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>Rosewood - Baha Mar</span>
-                    <span>Nassau, the Bahamas</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img004.png" alt="Img004">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>St. Regis - The Astor Tower</span>
-                    <span>Brickell, Miami</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img005.png" alt="Img005">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>Giralda Place</span>
-                    <span>Coral Gables</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img006.png" alt="Img006">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>St. Regis - The William Tower</span>
-                    <span>Brickell, Miami</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img007.png" alt="Img007">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>Solterre at Cockleshell Bay</span>
-                    <span>St. Kitts and nevis</span>
-                </div>
-            </a>
-            <a class="developments-gallery-box">
-                <div class="developments-gallery-img">
-                    <img src="../img/seccion-tres/img008.png" alt="Img008">
-                </div>
-                <div class="developments-gallery-text">
-                    <span>Urbin</span>
-                    <span>Coconut Grove</span>
-                </div>
-            </a>
-
-            
-
-        </div>
-    </section>
-
-    <!-- section-04 -->
+</section>
 
 </body>
 
