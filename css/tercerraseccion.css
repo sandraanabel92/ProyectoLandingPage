@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mulish:wght@300&display=swap');
 
+.developments-text h2{
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+
+
+}
 .container-developments{
     display: grid;
     grid-template-rows: 150px 1fr;
@@ -12,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .developments-gallery{
@@ -20,6 +30,7 @@
     column-gap: 10px;
     row-gap: 10px;
     margin: 0 5% 0 5%;
+    padding-top: 20px;
 }
 
 .developments-gallery-box {
@@ -30,7 +41,9 @@
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 }
-
+.developments-gallery-img {
+    height: 30vh;
+}
 
 .developments-gallery-img img {
     width: 100%;
@@ -42,6 +55,7 @@
     display: grid;
     background: white;
     padding: 1vw 0 1vw 2vw;
+    height: 30px;
 }
 
 
