@@ -3,28 +3,33 @@
 
 
 /*Gallery-sale-content*/
-.textos-sale{
+.textos-sale {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alinea los elementos hijos a la derecha */
-    text-align: right; /* Alinea el texto a la derecha */
-    padding-right: 50px; 
+    align-items: flex-end;
+    /* Alinea los elementos hijos a la derecha */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+    padding-right: 50px;
 }
-.textos-sale h2{
+
+.textos-sale h2 {
     color: #000;
     font-size: 40px;
     font-style: normal;
     font-weight: bold;
-    
+
 
 }
-.botones-navigation{
+
+.botones-navigation {
     display: flex;
     align-items: center;
     gap: 60px;
     margin-top: 200px;
     justify-content: space-between;
 }
+
 .prev-sale {
     color: #B4B7B7;
     font-size: 15px;
@@ -35,6 +40,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .next-sale {
     color: #DF991B;
     font-size: 15px;
@@ -50,10 +56,12 @@
     height: 30px;
     width: 15px;
 }
+
 .next-sale img {
     height: 30px;
     width: 15px;
 }
+
 .view-sale {
     font-weight: 390;
     font-size: 20px;
@@ -63,43 +71,58 @@
     padding: 10px 50px;
     border-radius: 100px;
 }
-.contenedor-sale{
+
+.contenedor-sale {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     place-items: center;
-    margin-top: 60px; 
+    margin-top: 60px;
 }
-.contenedor-imagenes-sale{
+
+.contenedor-imagenes-sale {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    overflow-x:hidden;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
     gap: 10px;
+    grid-template-rows: 500px;
 }
-.imagen03-sale{
+
+.imagen03-sale {
     grid-column: span 2;
     overflow: hidden;
     position: relative;
 }
-.imagenes-sale{
+
+.imagenes-sale {
     grid-column: span 5;
     overflow: hidden;
     position: relative;
 }
-.imagenes-sale:hover{
+
+.imagenes-sale:hover {
     cursor: pointer;
 }
+
 .imagenes-sale:hover p{
     background-color: white;
     color: black;
 }
-.imagenes-sale img{
+.imagenes-sale:hover .icon-castle{
+    background-color: white;
+    color: black;
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+
+.imagenes-sale img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.imagenes-sale p{
+.imagenes-sale p {
     position: absolute;
     color: white;
     z-index: 1;
@@ -109,9 +132,16 @@
     padding: 10px;
     margin: 0;
     transition: 0.3s ease;
-    
+
 }
-.contenedor-texto-sale{
+
+.icon-castle {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.contenedor-texto-sale {
     padding: 50px;
 }
 
@@ -139,15 +169,17 @@ spam {
     font-size: 25px;
     font-style: normal;
     font-weight: 330;
-    
+
 }
-.gallery-rent-navigation{
+
+.gallery-rent-navigation {
     display: flex;
     align-items: center;
     gap: 25px;
     margin-top: 120px;
     justify-content: space-between;
 }
+
 .prev-rent {
     color: #B4B7B7;
     font-size: 15px;
@@ -179,6 +211,7 @@ spam {
     height: 30px;
     width: 15px;
 }
+
 .view-rent {
     font-weight: 390;
     font-size: 20px;
@@ -188,43 +221,61 @@ spam {
     padding: 10px 50px;
     border-radius: 100px;
 }
-.gallery-section-rent{
+
+.gallery-section-rent {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     place-items: center;
     margin-top: 100px;
 }
-.contenedor-imagenes{
+
+.contenedor-imagenes {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    overflow-x:hidden;
+    grid-template-columns: repeat(12, 1fr);
+    overflow-x: hidden;
     gap: 10px;
+    grid-template-rows: 500px;
 }
-.imagenes{
+
+.imagenes {
     grid-column: span 5;
     overflow: hidden;
     position: relative;
-    
+
 }
-.imagenes:hover{
+
+.imagenes:hover {
     cursor: pointer;
 }
-.imagenes:hover p{
+
+.imagenes:hover p {
     background-color: white;
     color: black;
 }
-.imagenes img{
+
+.imagenes img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.imagen03{
+
+.imagen03 {
     grid-column: span 2;
     overflow: hidden;
     position: relative;
 }
-.imagenes p{
+
+.imagen03:hover {
+    cursor: pointer;
+}
+
+.imagen03:hover p {
+    background-color: white;
+    color: black;
+}
+
+.imagen03 p {
     position: absolute;
     color: white;
     z-index: 1;
@@ -234,8 +285,22 @@ spam {
     padding: 10px;
     margin: 0;
     transition: 0.3s ease;
-    
+
 }
-.contenedor-texto{
+
+.imagenes p {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    transition: 0.3s ease;
+
+}
+
+.contenedor-texto {
     padding: 50px;
 }
