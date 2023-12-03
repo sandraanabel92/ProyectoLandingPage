@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mulish:wght@300&display=swap');
+
+.container-developments{
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.developments-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developments-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 5% 0 5%;
+}
+
+.developments-gallery-box {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+
+.developments-gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.developments-gallery-text {
+    display: grid;
+    background: white;
+    padding: 1vw 0 1vw 2vw;
+}
+
+
+.developments-gallery-box:hover{
+    border: 1px solid #7E7E7E;
+    transform: translateY(-1vw);
+    cursor: pointer;
+}
+
+.developments-gallery-text span {
+    font-size: 17px;
+    line-height: 22px;
+}
