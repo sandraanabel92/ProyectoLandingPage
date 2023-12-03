@@ -1,63 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mulish:wght@300&display=swap');
 
-.gallery-section-sale {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.gallery-images-sale {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    overflow-x:hidden;
-    gap: 10px;
-   
-}
-.imagenes-sale{
-    grid-column: span 5;
-}
-.imagenessale03{
-    grid-column: span 2;
-}
 
 
 /*Gallery-sale-content*/
-.gallery-sale-content {
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    /* Espacio para el título, subtítulo, texto y navegación */
-    gap: 10px;
-    /* Espacio entre elementos del texto */
+.textos-sale{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos hijos a la derecha */
+    text-align: right; /* Alinea el texto a la derecha */
+    padding-right: 50px; 
 }
-
-.gallery-sale-content p {
-    color: #DF991B;
+.textos-sale h2{
+    color: #000;
     font-size: 40px;
     font-style: normal;
-    font-weight: 400;
-
-
-}
-
-.gallery-sale-content h2 {
-    color: #000000;
-    font-size: 80px;
-    font-style: normal;
     font-weight: bold;
-
+    
 
 }
-
-.gallery-sale-navigation {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: start;
+.botones-navigation{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+.prev-sale {
+    color: #B4B7B7;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    font-weight: 390;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.next-sale {
+    color: #DF991B;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    font-weight: 390;
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-/*Botones-sale*/
+.prev-sale img {
+    height: 30px;
+    width: 15px;
+}
+.next-sale img {
+    height: 30px;
+    width: 15px;
+}
 .view-sale {
     font-weight: 390;
     font-size: 20px;
@@ -67,43 +63,60 @@
     padding: 10px 50px;
     border-radius: 100px;
 }
-
-.gallery-sale-navigation {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 30px;
+.contenedor-sale{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+    margin-top: 60px; 
+}
+.contenedor-imagenes-sale{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    overflow-x:hidden;
+    gap: 10px;
+}
+.imagen03-sale{
+    grid-column: span 2;
+    overflow: hidden;
+    position: relative;
+}
+.imagenes-sale{
+    grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+}
+.imagenes-sale:hover{
+    cursor: pointer;
+}
+.imagenes-sale:hover p{
+    background-color: white;
+    color: black;
+}
+.imagenes-sale img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.prev-sale {
-    color: #B4B7B7;
-    font-size: 15px;
-    background-color: transparent;
-    border: none;
-    font-weight: 390;
-    display: flex;
-    align-items: center;
+.imagenes-sale p{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    transition: 0.3s ease;
+    
+}
+.contenedor-texto-sale{
+    padding: 50px;
 }
 
-.next-sale {
-    color: #DF991B;
-    font-size: 15px;
-    background-color: transparent;
-    border: none;
-    font-weight: 390;
-    display: flex;
-    align-items: center;
-}
 
-.prev-sale img {
-    height: 30px;
-    width: 15px;
-}
 
-.next-sale img {
-    height: 30px;
-    width: 15px;
-}
 
 /*Gallery-rent-content*/
 
@@ -118,21 +131,22 @@ spam {
     color: #000;
     font-size: 40px;
     font-style: normal;
-    font-weight: 500;
     font-weight: bold;
 }
 
 .gallery-rent-content p {
     color: #000;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 330;
+    
 }
 .gallery-rent-navigation{
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-top: 50px;
+    margin-top: 120px;
+    justify-content: space-between;
 }
 .prev-rent {
     color: #B4B7B7;
@@ -177,15 +191,51 @@ spam {
 .gallery-section-rent{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+    margin-top: 100px;
 }
 .contenedor-imagenes{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     overflow-x:hidden;
+    gap: 10px;
 }
 .imagenes{
     grid-column: span 5;
+    overflow: hidden;
+    position: relative;
+    
+}
+.imagenes:hover{
+    cursor: pointer;
+}
+.imagenes:hover p{
+    background-color: white;
+    color: black;
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .imagen03{
     grid-column: span 2;
+    overflow: hidden;
+    position: relative;
+}
+.imagenes p{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    transition: 0.3s ease;
+    
+}
+.contenedor-texto{
+    padding: 50px;
 }
