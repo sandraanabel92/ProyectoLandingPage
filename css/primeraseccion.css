@@ -331,13 +331,17 @@ body {
     padding-left: 10px;
 }
 
-.navbar__menu-icon {
+.navbar__menu-icon-mobile {
     display: none;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
     .navbar__menu-icon{
+        display: block;
+    }
+
+    .navbar__menu-icon-mobile {
         display: block;
     }
 
