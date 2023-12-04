@@ -31,9 +31,10 @@
             </div>
             <!-- Contenedor de los enlaces de idioma y menú hamburguesa -->
             <div class="navbar__links navbar__links--lang">
-                <a href="#" class="navbar__link">ESP</a>
-                <a href="#" class="navbar__link">ENG</a>
-                <div class="navbar__divider"></div> <!-- Divisor aquí -->
+                <a href="#" class="navbar__link navbar_link_full">ESP</a>
+                <a href="#" class="navbar__link navbar_link_full">ENG</a>
+                <div class="navbar__divider navbar_link_full"></div> <!-- Divisor aquí -->
+                <img src="../img/seccion-cuatro/service-ul-circle.svg" alt="Menu" class="navbar__menu-icon">
                 <button class="navbar__menu">
                     <img src="../img/hamburger_icon.svg" alt="Menu" class="navbar__menu-icon">
                 </button>
@@ -98,20 +99,18 @@
 
 </header>
 
-<!-- section-02 -->
-<!-- Gallery Sale -->
 <section class="contenedor-sale">
     <div class="contenedor-imagenes-sale">
         <div class="imagen03-sale">
-            <img src="../img/gallerysale03.png" alt="Gallery Sale 03">
+            <img src="../img/gallerysale03.png" id="image-sale-03" alt="Gallery Sale 03">
         </div>
-        <div class="imagenes-sale">
+        <div class="imagenes-sale" id="image-sale-02">
             <img src="../img/gallerysale02.png" alt="Gallery Sale 02">
             <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
                 England<br>Glasgow</p>
         </div>
         <div class="imagenes-sale">
-            <img src="../img/gallerysale01.png" alt="Gallery Sale 01">
+            <img src="../img/gallerysale01.png" id="image-sale-01" alt="Gallery Sale 01">
 
             <p><img class="icon-castle" src="../img/castillo.svg" alt="icono">
                 France<br>Marseilles</p>
@@ -121,6 +120,9 @@
         <div class="textos-sale">
             <spam>Worldwide gallery</spam>
             <h2>Properties for sale</h2>
+            <p>
+                In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.
+            </p>
         </div>
         <div class="botones-navigation">
             <button class="prev-sale">
@@ -141,7 +143,6 @@
 
 </section>
 
-<!-- Gallery Rent -->
 <section class="gallery-section-rent">
     <div class="contenedor-texto">
         <div class="gallery-rent-content">
@@ -163,15 +164,15 @@
         </div>
     </div>
     <div class="contenedor-imagenes">
-        <div class="imagenes">
-            <img src="../img/galleryrent001.png" alt="Gallery Rent 01">
+        <div class="imagenes" id="image-rent-01">
+            <img src="../img/galleryrent001.png"  alt="Gallery Rent 01">
             <p>France<br>Carcassonne</p>
         </div>
-        <div class="imagenes">
-            <img src="../img/galleryrent002.png" alt="Gallery Rent 02">
+        <div class="imagenes" id="image-rent-02">
+            <img src="../img/galleryrent002.png"  alt="Gallery Rent 02">
             <p>Germany<br> Munich</p>
         </div>
-        <div class="imagen03">
+        <div class="imagen03" id="image-rent-03">
             <img src="../img/galleryrent003.png" alt="Gallery Rent 03">
             <p>Fran<br>Clo</p>
         </div>
@@ -179,7 +180,7 @@
 
     </div>
 </section>
-<!-- section-03 -->
+
 <section class="container-developments">
     <div class="developments-text">
         <spam>Luxury properties</spam>
@@ -260,7 +261,7 @@
         </a>
     </div>
 </section>
-<!-- section-04 -->
+
 <section class="container-services">
     <div class="services-box-01">
         <p>box black</p>
